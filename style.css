@@ -1,1 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
+body {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.26);
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    text-decoration: underline overline #99B5AC;
+    color: #513B3D;
+    padding-bottom: 1.2rem;
+}
+
+li {
+    padding-bottom: 0.5rem;
+    margin-left:2rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ol, ul {
+	list-style: circle;
+}
+/* balise <a> */
+a:link {
+    color: black;
+}
+a:visited {
+    color: #513B3D;
+}
+a:hover {
+    background-color: #99B5AC;
+}
+
+.right .left {
+    height: 100%;
+    width: 100%;
+}
+
+/* Font */
+.cinzel-400 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cinzel-700 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cinzel-900 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+/* droite */
+.right {
+    width: 75%;
+    border-left: solid 2px #513B3D;
+    padding: 5rem;
+    background-color:#E8E8E6 ;
+}
+
+.right__title1{
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    color: #99B5AC;
+}
+
+.right__title2 {
+    padding-top: 1rem;
+}
+
+.right__title6{
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #513B3D;
+}
+
+.right__formations {
+    padding-bottom: 3rem;
+}
+.right__p1{
+    font-size: 2rem;
+    text-align: center;
+    color:#99B5AC ;
+    font-weight: bold;
+}
+
+.right__p1, .right__p2{
+    padding-bottom: 1rem;
+}
+
+.right__p3 {
+    color: #513B3D;
+}
+/* gauche */
+.left {
+    width: 25%;
+    background-color: #C2BBB0;
+    padding: 4rem;
+}
+
+.left__informations, .left__skills, .left__soft, .left__hard{
+	background: #E8E8E6;
+	border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: black;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    padding: 1.7rem;
+    margin-bottom: 6rem;
+}
+
+.left__informations:hover, .left__skills:hover, .left__soft:hover, .left__hard:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.left__title1, .left__title2, .left__title3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.left__title1, .left__title2, .left__title3 {
+    text-decoration: underline dotted #99B5AC;
+    text-underline-offset: 5px;
+}
+
+.left__title6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 0.77rem;
+    text-transform: uppercase;
+    color: #513B3D;
+}
+
+.left__p2 {
+    padding-bottom: 1.5rem;
+}
+
+.left__logo {
+    display:block;
+    margin: 0 auto 50px auto;
+}
+
+.left_icon {
+    width:30px;
+    vertical-align: middle;
+}
+
+/* responsive 1200px */
+@media (min-width:1200px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right__title1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:1200px){
+    .right__title1{
+        font-size: 2.5rem;
+    }
+
+    .right__p1 {
+        font-size: 1.4rem;
+        text-align: end;
+    }
+}
+/* responsive 900px */
+@media (min-width:900px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .left{
+        padding: 5rem;
+    }
+    .left__logo{
+        width: 90%;
+    }
+}
+
+@media (max-width:900px){
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left, .right {
+        width: 90%;
+    }
+
+    .right__title1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .right__p1, h2{
+        font-size: 1.2rem;
+    }
+
+    .left{
+        padding: 5rem;
+    }
+
+    .right {
+        border-left: 0;
+    }
+
+    .right__title1, .right__p1{
+        text-align: center;
+    }
+
+    .right__p1, h2{
+        font-size: 1.3rem;
+    }
+}
+/* responsive entre 600px et 900px*/
+@media (min-width:600px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* responsive en dessous de 600px */
+@media (max-width:600px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right__title1{
+        font-size: 2rem;
+    }
+
+    .right__p1, h2, h3 {
+        font-size: 1.1rem;
+    }
+}
